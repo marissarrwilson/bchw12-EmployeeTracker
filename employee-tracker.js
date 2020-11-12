@@ -13,7 +13,7 @@ const connection = mysql.createConnection({
 
     // Your password
     password: "allblack",
-    database: "Employee_Tracker"
+    database: "Employee_TrackerDB"
 });
 
 connection.connect(function (err) {
@@ -105,7 +105,7 @@ function addEmployee() {
             message: "What is the employee's manager's ID?"
         },
     ]).then(function (res) {
-        connection.query('INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)', [res.firstName, res.lastName, res.roleID, res.managerID], function (err, data) {
+        connection.query('INSERT INTO employee (firstName, lastName, roleID, managerID) VALUES (?, ?, ?, ?)', [res.firstName, res.lastName, res.roleID, res.managerID], function (err, data) {
             if (err) throw err;
             console.table("Employee added!");
             questionPrompt();
@@ -157,7 +157,7 @@ function addRole() {
 function updateEmployee() {
     inquirer.prompt([
         {
-            name: "name",
+            name: "firstName",
             type: "input",
             message: "Which employee would you like to update? (first name)"
         },
@@ -167,7 +167,7 @@ function updateEmployee() {
             message: "Enter the new role ID"
         }
     ]).then(function (answer) {
-        connection.query("UPDATE employee SET roleID = ? WHERE firstName = ?", [answer.roleID, answer.name], function (err, data) {
+        connection.query("UPDATE employee SET roleID = ? WHERE firstName = ?", [answer.roleID, answer.firstName], function (err, data) {
             console.table(data);
         })
         questionPrompt();
