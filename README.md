@@ -11,24 +11,28 @@
 * [License](#license)
 
 ## Description
-This application allows the user to write, save and delete notes.
+This application allows the user to keep track of their employees, departments, roles and salaries. This information is stored to a mySQL database.
 
-The Heroku deployed application can be accessed via the following link: 
+The deployed application can be accessed via the following link: 
 
 ## Installation
-Git clone this repository and NPM install to use.
+Git clone this repository and NPM install inquirer to use.
 
 ## Usage
-Type in "node server.js" to start up the application, and open up the local host webpage on your browser to start writing and saving your notes.
+Create a mySQL database by using the prewritten code in the employee-tracker.sql file. Run this code in mySQL workbench.
+
+Once you have created the database in mySQL, type "node employee-tracker.js" in the integrated terminal (in this repository) to start up the application, and answer the prompts through the terminal to add/change inputs to the database.
 
 ## Screenshots
-![Note Taker Browser](images/notetaker.png)
+![Terminal view](images/terminal.png)
+![mySQL view](images/mysql.png)
 
 ## Credits
 Individual work by me, Marissa Wilson, with the help of...
 
-* Instructor Fil L
+* Instructors Fil and Daniel
 * Boolean Bros
+* Class activities in module 12 (utor folder)
 
 ## Questions
 For any questions regarding this project, I can be reached at wilson.marissarose@gmail.com.
