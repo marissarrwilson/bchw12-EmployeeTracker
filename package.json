@@ -1,0 +1,24 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "This application allows the user to keep track of their employees, departments, roles and salaries. This information is stored to a mySQL database.",
+  "main": "employee-tracker.js",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marissarrwilson/bchw12-EmployeeTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marissarrwilson/bchw12-EmployeeTracker/issues"
+  },
+  "homepage": "https://github.com/marissarrwilson/bchw12-EmployeeTracker#readme"
+}
