@@ -13,8 +13,6 @@
 ## Description
 This application allows the user to keep track of their employees, departments, roles and salaries. This information is stored to a mySQL database.
 
-The deployed application can be accessed via the following link: 
-
 ## Installation
 Git clone this repository and NPM install inquirer to use.
 
