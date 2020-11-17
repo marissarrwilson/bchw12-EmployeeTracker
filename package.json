@@ -1,7 +1,7 @@
 {
-  "name": "employee-tracker",
+  "name": "bchw12",
   "version": "1.0.0",
-  "description": "This application allows the user to keep track of their employees, departments, roles and salaries. This information is stored to a mySQL database.",
+  "description": "## Table of Contents",
   "main": "employee-tracker.js",
   "dependencies": {
     "inquirer": "^7.3.3",
@@ -9,7 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node employee-tracker.js"
   },
   "repository": {
     "type": "git",

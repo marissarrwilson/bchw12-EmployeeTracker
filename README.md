@@ -25,7 +25,6 @@ Once you have created the database in mySQL, type "node employee-tracker.js" in 
 
 ## Screenshots
 ![Terminal view](images/terminal.png)
-![mySQL view](images/mysql.png)
 
 ## Credits
 Individual work by me, Marissa Wilson, with the help of...
